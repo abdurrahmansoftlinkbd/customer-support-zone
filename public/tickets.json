@@ -1,0 +1,137 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but the reset email never arrives. Account was working fine until two days ago.",
+    "customer": "James Whitfield",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-15"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment Failed - Card Declined",
+    "description": "Customer attempted to pay using Visa ending in 4242 but the transaction keeps failing despite sufficient balance and no bank-side blocks. Tried two different browsers with same result.",
+    "customer": "Sarah Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-16"
+  },
+  {
+    "id": "#1003",
+    "title": "Unable to Download Invoice",
+    "description": "Customer cannot download their January invoice from the billing section. Clicking the download button shows a spinner but nothing happens. Issue is consistent across Chrome and Firefox.",
+    "customer": "Michael Brown",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-01-17"
+  },
+  {
+    "id": "#1004",
+    "title": "Incorrect Billing Address on Receipts",
+    "description": "Customer updated their billing address three weeks ago but all generated receipts still show the old address. This is causing issues with their company's accounting department for reimbursement.",
+    "customer": "Emily Davis",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-18"
+  },
+  {
+    "id": "#1005",
+    "title": "App Crash on Launch - Android 13",
+    "description": "Customer reports the mobile app crashes immediately upon opening on a Samsung Galaxy S23 running Android 13. Reinstalling the app did not resolve the issue. Other apps on the device work normally.",
+    "customer": "David Wilson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-19"
+  },
+  {
+    "id": "#1006",
+    "title": "Refund Not Processed After 14 Days",
+    "description": "Customer requested a refund two weeks ago following order cancellation. The refund was confirmed via email but the amount has not reflected in their bank account or PayPal balance yet.",
+    "customer": "Sophia Taylor",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": "#1007",
+    "title": "Two-Factor Authentication Code Not Delivered",
+    "description": "Customer is not receiving 2FA SMS codes when trying to log in. They confirmed the phone number on file is correct and active. The issue started after they recently switched carriers.",
+    "customer": "Liam Nguyen",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-21"
+  },
+  {
+    "id": "#1008",
+    "title": "Subscription Plan Upgraded Without Consent",
+    "description": "Customer noticed their plan was silently upgraded from Starter to Pro during the last billing cycle, resulting in an unexpected charge of $49. They did not authorize this change and are requesting an immediate refund.",
+    "customer": "Olivia Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2026-01-22"
+  },
+  {
+    "id": "#1009",
+    "title": "CSV Data Export Contains Corrupted Rows",
+    "description": "When exporting transaction history to CSV, rows beyond line 500 appear garbled with broken encoding. The issue only occurs with date ranges spanning more than 90 days. Smaller exports work fine.",
+    "customer": "Ethan Clarke",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-01-23"
+  },
+  {
+    "id": "#1010",
+    "title": "Profile Photo Upload Fails Above 1MB",
+    "description": "Customer is unable to upload a profile picture larger than 1MB even though the documentation states the limit is 5MB. The upload bar completes but then reverts with no error message shown.",
+    "customer": "Ava Thompson",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-24"
+  },
+  {
+    "id": "#1011",
+    "title": "Email Notifications Stopped Arriving",
+    "description": "Customer has not received any email notifications for the past five days despite having all preferences enabled. They've checked spam and confirmed their email address is correct. Other platform emails do arrive.",
+    "customer": "Noah Patel",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-25"
+  },
+  {
+    "id": "#1012",
+    "title": "Dashboard Analytics Showing Incorrect Figures",
+    "description": "Customer's revenue analytics dashboard is displaying data from the wrong date range. Selecting 'Last 30 Days' appears to show data from 60 days ago. This is affecting their monthly reporting to stakeholders.",
+    "customer": "Isabella Reed",
+    "priority": "HIGH PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-01-26"
+  },
+  {
+    "id": "#1013",
+    "title": "Team Member Invite Link Expired Immediately",
+    "description": "Customer sent an invitation to a new team member but the invite link showed as expired before it could be used. This happened twice in a row. The invited email address is not already registered.",
+    "customer": "Mason Hill",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2026-01-27"
+  },
+  {
+    "id": "#1014",
+    "title": "API Key Regeneration Breaks Existing Integrations",
+    "description": "After regenerating an API key from the developer settings, the customer's Zapier and Webhook integrations stopped functioning. They expected the old key to remain valid for a grace period as stated in the docs.",
+    "customer": "Charlotte Brooks",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-28"
+  },
+  {
+    "id": "#1015",
+    "title": "Dark Mode Not Persisting After Logout",
+    "description": "Customer has set their interface to dark mode but every time they log out and back in, the setting resets to light mode. This has been happening consistently for two weeks across both desktop and mobile.",
+    "customer": "Lucas Freeman",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-01-29"
+  }
+]

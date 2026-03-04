@@ -1,7 +1,7 @@
-const StatusBanners = () => {
+const StatusBanners = ({ inProgressCount, resolvedCount }) => {
   return (
-    <div className="container w-11/12 mx-auto flex flex-col sm:flex-row gap-5 pt-24">
-      {/* progess */}
+    <div className="container w-11/12 mx-auto flex flex-col sm:flex-row gap-5 pt-16">
+      {/* progress */}
       <div
         className="flex-1 rounded-lg flex flex-col items-center justify-center gap-5 p-6 py-16"
         style={{
@@ -9,7 +9,9 @@ const StatusBanners = () => {
         }}
       >
         <span className="text-white text-2xl">In-Progress</span>
-        <span className="text-white text-6xl font-semibold">0</span>
+        <span className="text-white text-6xl font-semibold">
+          {inProgressCount}
+        </span>
       </div>
 
       {/* resolved */}
@@ -20,7 +22,9 @@ const StatusBanners = () => {
         }}
       >
         <span className="text-white text-2xl">Resolved</span>
-        <span className="text-white text-6xl font-semibold">0</span>
+        <span className="text-white text-6xl font-semibold">
+          {resolvedCount}
+        </span>
       </div>
     </div>
   );
