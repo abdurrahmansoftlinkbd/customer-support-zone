@@ -1,6 +1,6 @@
 import CustomerTickets from "./components/CustomerTickets";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import StatusBanners from "./components/StatusBanners";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <section className="font-inter bg-[#F5F5F5]">
         <CustomerTickets></CustomerTickets>
       </section>
+      <Footer></Footer>
     </>
   );
 }
