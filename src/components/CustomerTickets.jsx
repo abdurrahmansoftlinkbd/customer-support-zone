@@ -3,6 +3,7 @@ import StatusBanners from "./StatusBanners";
 import { Suspense, use, useState } from "react";
 import toast from "react-hot-toast";
 import TaskStatus from "./TaskStatus";
+import Resolved from "./Resolved";
 
 const fetchTickets = async () => {
   const res = await fetch("tickets.json");
@@ -66,30 +67,12 @@ const CustomerTickets = () => {
 
         {/* right */}
         <div className="w-full lg:w-72 xl:w-80 flex flex-col gap-5">
-          {/* task status */}
           <TaskStatus
             inProgress={inProgress}
             handleComplete={handleComplete}
           ></TaskStatus>
 
-          {/* resolved */}
-          <div>
-            <h2 className="text-2xl text-[#34485A] font-bold mb-4">
-              Resolved Task
-            </h2>
-            {resolved.length === 0 && (
-              <p className="text-[#627382]">No resolved tasks yet.</p>
-            )}
-            {resolved.map((task) => (
-              <div key={task?.id} className="card bg-[#E0E7FF] shadow-sm mb-3">
-                <div className="card-body p-2 gap-3">
-                  <div className="p-2">
-                    <h4 className="text-lg font-medium">{task?.title}</h4>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Resolved resolved={resolved}></Resolved>
         </div>
       </div>
     </>
