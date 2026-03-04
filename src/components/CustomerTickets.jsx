@@ -9,31 +9,32 @@ const fetchTickets = async () => {
   const res = await fetch("tickets.json");
   return res.json();
 };
-
 const ticketsPromise = fetchTickets();
 
 const CustomerTickets = () => {
-  const tickets = use(ticketsPromise);
+  const initialTickets = use(ticketsPromise);
+  const [tickets, setTickets] = useState(initialTickets);
 
   const [inProgress, setInProgress] = useState([]);
   const [resolved, setResolved] = useState([]);
 
-  // task status
   const handleAddTask = (ticket) => {
     const exists = inProgress.find((t) => t.id === ticket.id);
-    if (exists) {
-      toast.error("Already added!");
+    const alreadyResolved = resolved.find((t) => t.id === ticket.id);
+
+    if (exists || alreadyResolved) {
+      toast.error("Task already processed!");
       return;
     }
 
-    setInProgress([...inProgress, ticket]);
+    setInProgress((prev) => [...prev, ticket]);
     toast.success("Added to Task Status");
   };
 
-  // complete task
   const handleComplete = (ticket) => {
-    setInProgress(inProgress.filter((t) => t.id !== ticket.id));
-    setResolved([...resolved, ticket]);
+    setInProgress((prev) => prev.filter((t) => t.id !== ticket.id));
+    setResolved((prev) => [...prev, ticket]);
+    setTickets((prev) => prev.filter((t) => t.id !== ticket.id));
     toast.success("Task Completed!");
   };
 
